@@ -18,16 +18,26 @@
   justify-self: center;
   text-align: center;
 }
+
 @media only screen and (max-width: 450px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .ImgContainer {
     width: 100%;
+    height: auto;
   }
 }
+
 .Img {
   display: inline-block;
   max-width: 400px;
   max-height: 500px;
 }
+
 .InfoContainer {
   font-family: "Rasa", serif;
   color: #00344b;
