@@ -23,12 +23,18 @@
   .Container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   .ImgContainer {
-    width: 100%;
     height: auto;
+  }
+
+  .InfoContainer {
+    height: 25rem;
+  }
+
+  .BtnContainer button {
+    margin-bottom: 1rem;
   }
 }
 
