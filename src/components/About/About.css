@@ -7,3 +7,9 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media only screen and (max-width: 569px) {
+  .Container h1 {
+    font-size: 30px;
+  }
+}
