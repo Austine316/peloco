@@ -140,7 +140,7 @@ class ProductProvider extends Component {
     let subTotal = 0;
     this.state.cart.map((item) => (subTotal += item.total));
     // const tempTax = subTotal * 0.15;
-    const tempTax = 1000;
+    const tempTax = 1500;
     const tax = parseFloat(tempTax.toFixed(2));
     const total = parseFloat((subTotal + tax).toFixed(2));
     subTotal = parseFloat(subTotal.toFixed(2));

@@ -1,13 +1,15 @@
 .Container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-rows: minmax(80vh, 1fr);
+  /* grid-template-rows: minmax(80vh, 1fr); */
   margin: 5rem 2rem 2rem 2rem;
   background-color: #ffffff;
 }
 @media only screen and (max-width: 450px) {
   .Container {
     margin: 5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
   }
 }
 .ImgContainer {
@@ -17,22 +19,6 @@
   overflow: hidden;
   justify-self: center;
   text-align: center;
-}
-
-@media only screen and (max-width: 450px) {
-  .Container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .InfoContainer {
-    height: auto;
-    /* background-color: tomato; */
-  }
-
-  .BtnContainer button {
-    margin-bottom: 1rem;
-  }
 }
 
 .Img {
@@ -46,16 +32,25 @@
   color: #00344b;
   margin: 2rem;
 }
+
+@media only screen and (max-width: 450px) {
+  .InfoContainer {
+    height: auto;
+  }
+}
+
 .Title {
   font-size: 2rem;
   margin: auto;
 }
+
 .BtnContainer {
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
 }
+
 .BackButton,
 .CartBtn {
   color: #00344b;
@@ -84,4 +79,10 @@
   opacity: 0.6;
   cursor: not-allowed;
   padding: 0.5rem 0.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .BtnContainer button {
+    margin-bottom: 1rem;
+  }
 }

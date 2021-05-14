@@ -6,14 +6,14 @@ const CartTotals = ({ value, history }) => {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
   return (
     <div className={classes.Container}>
-      <NavLink to="/shop">
-        <Link to="#">
+      <div>
+        <NavLink to="#">
           <button className={classes.Btn}>Place Order</button>
-        </Link>
+        </NavLink>
         <button className={classes.Btn} onClick={() => clearCart()}>
           Clear Cart
         </button>
-      </NavLink>
+      </div>
       <h3>
         <strong>SUBTOTAL : </strong>₦{cartSubTotal}
       </h3>
