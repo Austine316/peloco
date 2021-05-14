@@ -8,7 +8,7 @@ export default class About extends Component {
         <Title name="About PELOCO WEARS" />
         {/* <a href="https://github.com/hemanshuEng/react-ecommerce"><h1>Github</h1></a> */}
         {/* <h2>Created by Hemanshu Khodiyar</h2> */}
-        <span>
+        <span className={classes.About}>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
