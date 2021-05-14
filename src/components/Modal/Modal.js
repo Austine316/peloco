@@ -21,7 +21,7 @@ export default class Modal extends Component {
                     <img src={img} alt={title} className={classes.Img} />
                   </div>
                   <h3>{title}</h3>
-                  <h3>Price:₦{price}</h3>
+                  <h3>Price: ₦{price}</h3>
                   <div className={classes.BtnContainer}>
                     <NavLink to="/shop">
                       <button
