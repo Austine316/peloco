@@ -10,7 +10,8 @@ export default class Home extends Component {
         <img src={Shirt} alt="home" className={classes.Img} />
         <div className={classes.Overlay} />
         <div className={classes.Headding}>
-          <h1 className={classes.Title}>Choose the perfect outfit</h1>
+          <h1 className={classes.Title}>PELOCO WEARS</h1>
+          <h1 className={classes.Slogan}>Choose the perfect outfit</h1>
           <NavLink to="/shop">
             <button className={classes.Btn}>shop now</button>
           </NavLink>

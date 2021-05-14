@@ -32,11 +32,20 @@
 }
 
 .Title {
-  color: #fff;
-  font-family: "Rasa", serif;
+  color: rgb(224, 224, 224);
+  font-family: "Pacifico";
   font-size: 3.2rem;
   font-weight: normal;
-  margin: 2rem;
+  margin: 0;
+}
+
+.Slogan {
+  color: rgb(224, 224, 224);
+  font-family: "Rasa", serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 470px) {
@@ -50,10 +59,15 @@
     width: 100%;
     z-index: 300;
   }
-  .Headding h1 {
-    font-family: "Rasa", serif;
+  .Title {
+    font-family: "Pacifico";
     margin: 0.1rem;
     font-size: 1.9em;
+  }
+
+  .Slogan {
+    font-size: 1.6em;
+    margin: 0.1rem;
   }
 
   .Headding button {
@@ -76,6 +90,7 @@
   cursor: pointer;
   outline: none;
   font-family: "Roboto";
+  height: 3rem;
 }
 
 .Btn:hover {

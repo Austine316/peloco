@@ -15,14 +15,13 @@ const CartTotals = ({ value, history }) => {
         </button>
       </div>
       <h3>
-        <strong>SUBTOTAL : </strong>₦{cartSubTotal}
+        <strong>SUBTOTAL: </strong>₦{cartSubTotal}
       </h3>
       <h3>
-        <strong>Delivery Fee : </strong>
-        {cartTax}
+        <strong>Delivery Fee: </strong>₦{cartTax}
       </h3>
       <h3>
-        <strong>TOTAL : </strong>₦{cartTotal}
+        <strong>TOTAL: </strong>₦{cartTotal}
       </h3>
       {/* <Paypal 
       total={cartTotal}
