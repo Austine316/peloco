@@ -1,7 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Navigationitem from "./../Navigationitems/Navigationitem/Navigationitem";
-import Logo from "./../../Logo/Logo";
+// import Logo from "./../../Logo/Logo";
 import classes from "./SideDrawer.css";
 const SideDrawer = (props) => {
   let drawerClasses = [classes.SideDrawer];
