@@ -29,3 +29,24 @@
   margin: 0.5rem 0.5rem;
   text-transform: uppercase;
 }
+
+.BtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 450px) {
+  .BtnContainer {
+    justify-content: space-between;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .Btn {
+    width: 80px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    font-family: "Rasa", serif;
+  }
+}
