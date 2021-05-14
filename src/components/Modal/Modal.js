@@ -7,7 +7,7 @@ export default class Modal extends Component {
   render() {
     return (
       <ProductConsumer>
-        {value => {
+        {(value) => {
           const { modalOpen, closeModal } = value;
           const { img, title, price } = value.modalProduct;
           if (!modalOpen) {
@@ -17,19 +17,26 @@ export default class Modal extends Component {
               <div>
                 <BackDrop click={closeModal} />
                 <div className={classes.Container}>
-                <div className={classes.ImgContainer}>
-                    <img src={img} alt={title} className={classes.Img}/>
-                </div>
-                 <h3 >{title}</h3>
-                 <h3>Price:£{price}</h3>
-                 <div className={classes.BtnContainer}>
-                   <NavLink to="/shop">
-                     <button className={classes.BackButton} onClick={closeModal}>Back to Shop</button>
-                   </NavLink>
-                   <NavLink to="/Cart">
-                     <button className={classes.CartBtn} onClick={closeModal}>Go to Cart</button>
-                   </NavLink>
-                 </div>
+                  <div className={classes.ImgContainer}>
+                    <img src={img} alt={title} className={classes.Img} />
+                  </div>
+                  <h3>{title}</h3>
+                  <h3>Price:₦{price}</h3>
+                  <div className={classes.BtnContainer}>
+                    <NavLink to="/shop">
+                      <button
+                        className={classes.BackButton}
+                        onClick={closeModal}
+                      >
+                        Back to Shop
+                      </button>
+                    </NavLink>
+                    <NavLink to="/Cart">
+                      <button className={classes.CartBtn} onClick={closeModal}>
+                        Go to Cart
+                      </button>
+                    </NavLink>
+                  </div>
                 </div>
               </div>
             );
