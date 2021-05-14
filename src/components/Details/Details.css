@@ -13,7 +13,7 @@
 .ImgContainer {
   margin-top: 2rem;
   object-fit: cover;
-  height: 500px;
+  /* height: 500px; */
   overflow: hidden;
   justify-self: center;
   text-align: center;
@@ -25,12 +25,9 @@
     flex-direction: column;
   }
 
-  .ImgContainer {
-    height: auto;
-  }
-
   .InfoContainer {
-    height: 25rem;
+    height: auto;
+    /* background-color: tomato; */
   }
 
   .BtnContainer button {
@@ -86,4 +83,5 @@
   font-size: 1rem;
   opacity: 0.6;
   cursor: not-allowed;
+  padding: 0.5rem 0.5rem;
 }
