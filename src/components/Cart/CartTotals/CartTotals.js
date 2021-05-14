@@ -1,4 +1,5 @@
 import React from "react";
+import { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import Paypal from "./../Paypal/Paypal";
 import classes from "./CartTotals.css";
@@ -25,6 +26,7 @@ const CartTotals = ({ value, history }) => {
       <h3>
         <strong>Delivery Fee: </strong>₦{cartTax}
       </h3>
+
       <h3>
         <strong>TOTAL: </strong>₦{cartTotal}
       </h3>
