@@ -10,9 +10,11 @@ const CartTotals = ({ value, history }) => {
         <NavLink to="/shop">
           <button className={classes.Btn}>Back to Shop</button>
         </NavLink>
-        <button className={classes.Btn} onClick={() => clearCart()}>
-          Clear Cart
-        </button>
+        <NavLink to="/shop">
+          <button className={classes.Btn} onClick={() => clearCart()}>
+            Clear Cart
+          </button>
+        </NavLink>
         <NavLink to="#">
           <button className={classes.Btn}>Place Order</button>
         </NavLink>

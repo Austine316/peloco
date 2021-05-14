@@ -37,16 +37,17 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .Container {
+    margin: 0;
+  }
   .BtnContainer {
-    width: fit-content;
-    justify-content: space-between;
-    margin: 0 !important;
-    padding: 0 !important;
-    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
   }
 
   .Btn {
-    width: 100px;
+    width: 95px;
     font-size: 0.5rem;
     font-family: "Roboto";
     font-weight: bold;
