@@ -38,15 +38,15 @@
 
 @media only screen and (max-width: 450px) {
   .BtnContainer {
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 !important;
     padding: 0 !important;
   }
 
   .Btn {
     width: 80px;
-    font-size: 0.6rem;
-    font-weight: bold;
-    font-family: "Rasa", serif;
+    font-size: 0.5rem;
+    font-weight: 700;
+    font-family: "Roboto";
   }
 }
